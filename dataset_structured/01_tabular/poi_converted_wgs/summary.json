@@ -1,0 +1,19 @@
+{
+  "source_file": "poi_converted_wgs (3).csv",
+  "output_csv": "readable/poi_converted_wgs/poi_converted_wgs_3.csv",
+  "sample_csv": "readable/poi_converted_wgs/sample_first_100_rows.csv",
+  "row_count": 875979,
+  "column_count": 10,
+  "columns": [
+    "名称",
+    "大类",
+    "中类",
+    "经度",
+    "纬度",
+    "省份",
+    "地级市",
+    "区县",
+    "lon_wgs",
+    "lat_wgs"
+  ]
+}

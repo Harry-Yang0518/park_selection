@@ -1,0 +1,62 @@
+{
+  "source_shp": "F/19/上海市_公园面/上海市_公园面.shp",
+  "source_dbf": "F/19/上海市_公园面/上海市_公园面.dbf",
+  "record_count": 1733,
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "N",
+      "length": 10,
+      "decimal_count": 0
+    },
+    {
+      "name": "osm_id",
+      "type": "C",
+      "length": 12,
+      "decimal_count": 0
+    },
+    {
+      "name": "code",
+      "type": "N",
+      "length": 5,
+      "decimal_count": 0
+    },
+    {
+      "name": "fclass",
+      "type": "C",
+      "length": 28,
+      "decimal_count": 0
+    },
+    {
+      "name": "name",
+      "type": "C",
+      "length": 100,
+      "decimal_count": 0
+    },
+    {
+      "name": "Shape_Leng",
+      "type": "F",
+      "length": 19,
+      "decimal_count": 11
+    },
+    {
+      "name": "Shape_Area",
+      "type": "F",
+      "length": 19,
+      "decimal_count": 11
+    }
+  ],
+  "shp_header": {
+    "file_length_bytes": 585108,
+    "version": 1000,
+    "shape_type_code": 5,
+    "bbox": {
+      "xmin": 120.90058930005625,
+      "ymin": 30.70707709962852,
+      "xmax": 121.95273219983126,
+      "ymax": 31.822485299856734
+    }
+  },
+  "output_csv": "readable/上海市_公园面/attributes.csv",
+  "sample_csv": "readable/上海市_公园面/sample_first_100_rows.csv"
+}

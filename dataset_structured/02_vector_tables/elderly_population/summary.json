@@ -1,0 +1,38 @@
+{
+  "source_shp": "F/4/Elde pop(_7_with index)/filtered_elder_pop1106_1.shp",
+  "source_dbf": "F/4/Elde pop(_7_with index)/filtered_elder_pop1106_1.dbf",
+  "record_count": 24710,
+  "fields": [
+    {
+      "name": "id",
+      "type": "N",
+      "length": 18,
+      "decimal_count": 0
+    },
+    {
+      "name": "population",
+      "type": "N",
+      "length": 24,
+      "decimal_count": 15
+    },
+    {
+      "name": "elder_rati",
+      "type": "N",
+      "length": 24,
+      "decimal_count": 15
+    }
+  ],
+  "shp_header": {
+    "file_length_bytes": 691980,
+    "version": 1000,
+    "shape_type_code": 1,
+    "bbox": {
+      "xmin": 13511050.000000002,
+      "ymin": 3650080.8707175856,
+      "xmax": 13532150.000000002,
+      "ymax": 3673468.4742654595
+    }
+  },
+  "output_csv": "readable/filtered_elder_pop1106_1/attributes.csv",
+  "sample_csv": "readable/filtered_elder_pop1106_1/sample_first_100_rows.csv"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "poi_converted_wgs",
+  "title": "POI Converted WGS",
+  "category": "tabular",
+  "description": "POI table with category labels and WGS84 longitude/latitude fields.",
+  "source_dir": "data/poi_converted_wgs",
+  "files": {
+    "data_csv": "dataset_structured/01_tabular/poi_converted_wgs/poi_converted_wgs_3.csv",
+    "sample_csv": "dataset_structured/01_tabular/poi_converted_wgs/sample_first_100_rows.csv",
+    "summary_json": "dataset_structured/01_tabular/poi_converted_wgs/summary.json"
+  }
+}
