@@ -1,4 +1,17 @@
 __pycache__/
 *.py[cod]
 .venv/
+.DS_Store
+
+# Local data and generated artifacts are intentionally excluded from submission.
+dataset_structured/
+data/
 outputs/
+*.ipynb
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.zip
