@@ -3,15 +3,6 @@ __pycache__/
 .venv/
 .DS_Store
 
-# Local inputs and generated artifacts
-dataset_structured/
-data/
+# Generated artifacts
 outputs/
 *.ipynb
-*.gpkg
-*.shp
-*.shx
-*.dbf
-*.prj
-*.cpg
-*.zip

@@ -1,0 +1,13 @@
+{
+  "id": "accessibility_2sfca",
+  "title": "Accessibility 2SFCA",
+  "category": "vector_table",
+  "description": "Point accessibility layer exported from GeoJSON into tabular form.",
+  "source_dir": "data/accessibility_2sfca",
+  "files": {
+    "data_csv": "dataset_structured/02_vector_tables/accessibility_2sfca/features.csv",
+    "sample_csv": "dataset_structured/02_vector_tables/accessibility_2sfca/sample_first_100_rows.csv",
+    "preview_json": "dataset_structured/02_vector_tables/accessibility_2sfca/features.json",
+    "summary_json": "dataset_structured/02_vector_tables/accessibility_2sfca/summary.json"
+  }
+}

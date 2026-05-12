@@ -24,6 +24,7 @@ The implemented methodology follows the final report:
 ```text
 .
 ├── README.md
+├── dataset_structured/
 ├── docs/
 │   ├── INPUTS.md
 │   └── METHODOLOGY.md
@@ -47,6 +48,7 @@ The implemented methodology follows the final report:
 
 ## Method and Code Mapping
 
+- `dataset_structured/`: source and processed input data used by the pipeline
 - `src/park_selection/preprocess.py`: prepares POIs, standardized spatial layers, and elderly demand
 - `src/park_selection/quality.py`: computes the five-component park quality index
 - `src/park_selection/baselines.py`: computes single-access and multi-access baselines
