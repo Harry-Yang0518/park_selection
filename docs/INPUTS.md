@@ -1,10 +1,8 @@
-# Data Policy and Expected Local Layout
+# Input Layout
 
-Data files are not included in this GitHub submission. The repository only contains source code, documentation, and reproducibility scripts.
+The default pipeline reads spatial and tabular inputs from `dataset_structured/`. The paths can also be overridden with command-line arguments.
 
-Place the project data locally under `dataset_structured/` when running the pipeline. This directory is ignored by git.
-
-## Required Inputs
+## Expected Inputs
 
 The default scripts expect these files:
 
@@ -43,6 +41,6 @@ POI table or layer:
 - longitude/latitude columns for CSV standardization: `lon_wgs`, `lat_wgs`
 - category text columns when rebuilding quality: `名称`, `大类`, `中类`
 
-## Generated Files
+## Generated Outputs
 
-Generated outputs go to `outputs/` and are also ignored by git.
+Generated outputs go to `outputs/`.

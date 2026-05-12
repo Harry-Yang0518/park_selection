@@ -3,7 +3,7 @@ __pycache__/
 .venv/
 .DS_Store
 
-# Local data and generated artifacts are intentionally excluded from submission.
+# Local inputs and generated artifacts
 dataset_structured/
 data/
 outputs/

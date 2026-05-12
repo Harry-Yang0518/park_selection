@@ -1,8 +1,6 @@
 # Beyond Nearest-Park Access
 
-Final course project code submission for **Beyond Nearest-Park Access: Multi-Park and Park-Quality Assessment for Elderly-Friendly Planning in Shanghai**.
-
-This repository contains the cleaned Python implementation only. Datasets, generated outputs, and notebooks are intentionally excluded from the GitHub submission.
+Final course project for **Beyond Nearest-Park Access: Multi-Park and Park-Quality Assessment for Elderly-Friendly Planning in Shanghai**.
 
 ## Project Summary
 
@@ -27,7 +25,7 @@ The implemented methodology follows the final report:
 .
 ├── README.md
 ├── docs/
-│   ├── DATA.md
+│   ├── INPUTS.md
 │   └── METHODOLOGY.md
 ├── pyproject.toml
 ├── requirements.txt
@@ -47,13 +45,14 @@ The implemented methodology follows the final report:
         └── utils.py
 ```
 
-## What Is Not Included
+## Method and Code Mapping
 
-- No raw or processed datasets
-- No generated maps, tables, or model outputs
-- No notebooks
-
-The expected local data layout is documented in [docs/DATA.md](docs/DATA.md). The project code still uses `dataset_structured/` as the default local data directory, but that directory is ignored by git.
+- `src/park_selection/preprocess.py`: prepares POIs, standardized spatial layers, and elderly demand
+- `src/park_selection/quality.py`: computes the five-component park quality index
+- `src/park_selection/baselines.py`: computes single-access and multi-access baselines
+- `src/park_selection/optimization.py`: solves the budgeted intervention problem
+- `docs/METHODOLOGY.md`: gives the formulas used by the code
+- `docs/INPUTS.md`: describes the expected input layout and columns
 
 ## Implementation Scope
 
@@ -72,7 +71,7 @@ pip install -e .
 
 ## Reproduce the Pipeline
 
-After placing the required local data under `dataset_structured/`, run:
+With the required inputs under `dataset_structured/`, run:
 
 ```bash
 python scripts/run_all.py
@@ -105,7 +104,7 @@ python scripts/run_preprocess.py parameters
 
 ## Outputs
 
-Generated outputs are written to `outputs/`, which is ignored by git:
+Generated outputs are written to `outputs/`:
 
 - `outputs/parks_with_quality_report.gpkg`
 - `outputs/accessibility_baselines.gpkg`
@@ -117,7 +116,7 @@ Generated outputs are written to `outputs/`, which is ignored by git:
 
 ## Validation
 
-Static validation used for this submission:
+Static validation:
 
 ```bash
 python - <<'PY'
@@ -129,4 +128,4 @@ print(f"syntax ok: {len(paths)} files")
 PY
 ```
 
-Full geospatial execution requires the external dataset files described in [docs/DATA.md](docs/DATA.md).
+Full geospatial execution requires the input files described in [docs/INPUTS.md](docs/INPUTS.md).
