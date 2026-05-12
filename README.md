@@ -6,7 +6,7 @@ This repository contains the cleaned Python implementation only. Datasets, gener
 
 ## Project Summary
 
-The project evaluates elderly-friendly urban park accessibility in Shanghai. Instead of treating accessibility as a nearest-park problem, the model combines elderly demand, park quality, distance decay, and multiple reachable parks within an elderly-friendly walking catchment. It then solves a budgeted intervention problem to compare a single-access baseline with the proposed multi-access strategy.
+The project evaluates elderly-friendly urban park accessibility in Shanghai. Instead of treating accessibility as a nearest-park problem, the model combines elderly demand, park quality, distance decay, and multiple reachable parks within an elderly-friendly walking catchment. It then solves a budgeted intervention problem to compare a single-access baseline with a multi-access model.
 
 The implemented methodology follows the final report:
 
@@ -54,6 +54,10 @@ The implemented methodology follows the final report:
 - No notebooks
 
 The expected local data layout is documented in [docs/DATA.md](docs/DATA.md). The project code still uses `dataset_structured/` as the default local data directory, but that directory is ignored by git.
+
+## Implementation Scope
+
+The single-access and multi-access models are evaluated independently from the input data, formulas, selected actions, and budget constraint. Summary tables are written directly from those calculations, with no cross-model score adjustment.
 
 ## Setup
 

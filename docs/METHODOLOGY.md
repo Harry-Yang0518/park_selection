@@ -75,3 +75,7 @@ budget = 100
 ```
 
 The code solves a binary budgeted selection problem and reports comparable single-access and multi-access optimization results.
+
+## Reporting
+
+The single-access and multi-access models are evaluated independently using their own objective definitions. Summary tables report the values computed from each model and do not apply cross-model score adjustment.

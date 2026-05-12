@@ -1,3 +1,9 @@
+"""Budgeted intervention optimization.
+
+Single-access and multi-access portfolios are solved independently and reported
+without cross-model score adjustment.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass
